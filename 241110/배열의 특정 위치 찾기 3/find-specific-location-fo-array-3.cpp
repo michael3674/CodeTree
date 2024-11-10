@@ -3,12 +3,13 @@ using namespace std;
 
 int main() {
     int arr[100];
-    int sum = 0;
+    int i = 0, sum = 0;
 
-    for (int i = 0; i < 100; i++){
+    while (i < 100){
         cin >> arr[i];
         if (arr[i] == 0) break;
         sum += arr[i];
+        i++;
     }
 
     cout << sum;
