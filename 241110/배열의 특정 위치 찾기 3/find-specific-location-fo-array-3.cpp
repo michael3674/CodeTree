@@ -7,11 +7,12 @@ int main() {
 
     while (i < 100){
         cin >> arr[i];
-        if (arr[i] == 0) break;
-        sum += arr[i];
+        if (arr[i] == 0) {
+            sum = arr[i-3] + arr[i-2] + arr[i-1];
+            break;
+        }
         i++;
     }
-
     cout << sum;
 
     return 0;
