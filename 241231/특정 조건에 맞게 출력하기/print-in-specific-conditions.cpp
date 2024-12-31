@@ -9,6 +9,9 @@ int main() {
             if (arr[i] % 2 == 1) cout << (arr[i]+3) << " ";
             else cout << (arr[i] / 2) << " ";
         }
+        else{
+            break;
+        }
     }
 
     return 0;
